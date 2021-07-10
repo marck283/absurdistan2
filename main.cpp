@@ -1,23 +1,25 @@
 #include <bits/stdc++.h>
 
+using namespace std;
+
 double binomial(double a, double b);
 double factorial(double a);
 
 int main(void) {
-    std::ios_base::sync_with_stdio(false);
-    std::cin.tie(NULL);
-    std::cout.tie(NULL);
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    cout.tie(NULL);
 
     double N;
 
-    std::cin >> N;
+    cin >> N;
 
-    std::cout << std::setprecision(13);
+    cout << setprecision(13);
 
     if(N == 2) {
-        std::cout << 1.0;
+        cout << 1.0;
     } else {
-        std::cout << 1.0 - pow(1.0/(N - 1.0), N)*(binomial(N, N - 1.0) - 1.0);
+        cout << 1.0 - pow(1.0/(N - 1.0), N)*(binomial(N, N - 1.0) - 1.0);
     }
 }
 
