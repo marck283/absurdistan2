@@ -64,9 +64,11 @@ jobs:
     #    uses a compiled language
 
     - run: |
-       make bootstrap
-       make release
-       gcc main.cpp -o main
+        make release
+        gcc main.cpp -o main
+    #   make bootstrap
+    #   make release
+       
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v1
