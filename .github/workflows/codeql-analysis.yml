@@ -64,7 +64,6 @@ jobs:
     #    uses a compiled language
 
     - run: |
-        make release
         gcc main.cpp -o main
     #   make bootstrap
     #   make release
