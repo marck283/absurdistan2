@@ -10,7 +10,7 @@ int main(void) {
 
     double N;
 
-    std::cin >> N;
+    //std::cin >> N;
 
     std::cout << std::setprecision(13);
 
